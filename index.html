@@ -10,30 +10,38 @@
 </head>
 <body>
 
-    <div class="lines">
+    <!-- <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-      </div>
-      
+      </div>  -->
     
-        <section>
-            <textarea name="" id="inputTexto" cols="30" rows="10" placeholder="escreva... "></textarea>
-            
-        </section>
+        <main class="container">
+            <div class="elementos-textos">
+                <textarea name="" id="inputTexto" cols="30" rows="10" placeholder="escreva... "></textarea>
+          
         
+                <img class="detetive"src="images/detetive.jpg" alt="imagem do Detetive">
+        
+                <textarea name="" id="mensagem" cols="30" rows="10" placeholder="aguarde o Texto"></textarea>
+            </div>
             
 
-        <section>
-            <img class="detetive"src="images/detetive.jpg" alt="imagem do Detetive">
-        </section>
-            
-        <section>
-            <textarea name="" id="mensagem" cols="30" rows="10" placeholder="aguarde o Texto"></textarea>
-        </section>
+            <div class="botoes">
 
-        <button class="btncripto" onclick="btnEncriptar()"> criptografa </button>
-        <button class="btndescripto" onclick="btnDesencriptar()"> descriptografa </button>
+                <button class="btncripto" onclick="btnEncriptar()"> criptografa </button>
+    
+                <button class="btndescripto" onclick="btnDesencriptar()"> descriptografa </button>
+            </div>
+            
+            
+            
+
+            
+        </main>
+           
+      
+        
 
         <script src="script.js"></script>
 

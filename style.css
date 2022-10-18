@@ -1,12 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
-
-section {
+/* section {
 
     align-items: center;
     display: inline-block;
     text-align: center;
+
+} */
+
+.container {
+    margin-top: 100px;
+}
+
+.elementos-textos {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}     
+
+
+.detetive {
+    border-radius: 50%;
+    height: 250px;
+    margin-top: -400px;
+}
+
+.botoes {
+    justify-content: space-between;
+    width: 32.70%;
+    margin-left: 80px;
+    display: flex;
+    margin-top: 30px;
+}
+
+#inputTexto { 
+    margin-top: 0px;
+    font-size: 20px;
+    color: #feffeb;
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+}
+    
+
+#mensagem {
+    font-size: 20px;
+    color: #ffffff;
+    width:  300px;
+    height: 500px;
+    border: 2px solid white;
 
 }
 
@@ -14,70 +62,56 @@ section {
     cursor: all-scroll;
     color: #ffffff;
     font-size: 20px;
-    position: absolute;
-    top: 600px;
+    /* top: 600px;
     left: 40px;
-    right: 1100px;
+    right: 1100px; */
     padding: 20px;
-    
-    
-    display: inline-block;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .btndescripto{
     cursor: all-scroll;
     color: #ffffff;
     font-size: 20px;
-    position: absolute;
-    top: 600px;
+    /* top: 600px;
     left: 300px;
-    right: 1100px;
+    right: 1100px; */
     padding: 20px;
-    
-    
-    display: inline-block;
-    text-align: left;
-}
-
-        
-
-
-.detetive {
-    bottom: 350px;
-    right: -90px;
-    position: relative;
-    display: inline;
-    margin-right: 40px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-
-}
-
-#inputTexto {
-   
-    position: relative;
-    top: 40px;
-    padding: 10px;
-    font-size: 20px;
-    color: #feffeb;
-    margin:40px ;   
-    width: 500px;
-    height: 500px;
-
+    /* text-align: left; */
 }
     
 
-#mensagem {
-    position: relative;
-    top: 40px;
-    right: -200px;
-    padding: 10px;
-    font-size: 20px;
-    color: #ffffff;
-    width:  300px;
-    height: 550px;
+@media (max-width: 900px) {
+
+    .container {
+        height: 100vh;
+    }
+    .elementos-textos {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+       
+    }
+
+    .detetive {
+      display: none;
+      
+    }
+
+    #inputTexto {
+        width: 550px;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    #mensagem {
+        width: 550px;
+        height: 200px;
+    }
+
+    .botoes {
+        display: flex ;
+        width: 75%;
+    }
 
 }
-    
